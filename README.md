@@ -18,14 +18,8 @@ The project utilizes a dataset containing information on individuals' demographi
 ## Methodology
 
 1.  **Data Preparation:** The raw data was loaded, cleaned, and preprocessed. This involved handling missing values, converting data types, and engineering features where necessary.
-2.  **Exploratory Data Analysis (EDA):** Various visualizations and statistical methods were employed to understand the distribution of data, identify patterns, and explore the relationships between different features and the target variable. Key areas of exploration included:
-    *   Mental Health Treatment by Gender
-    *   Mental Health Treatment by Family History
-    *   Mental Health Treatment by Occupation
-    *   Mental Health Treatment by Care Options
-    *   Mental Health Treatment by Self-Employment
-    *   Class balance of the target variable.
-3.  **Model Building:** A Random Forest Classifier was chosen for the predictive task. A pipeline was created to handle preprocessing (specifically, one-hot encoding for categorical features) and model training.
+2.  **Exploratory Data Analysis (EDA):** Various visualizations and statistical methods were employed to understand the distribution of data, identify patterns, and explore the relationships between different features and the target variable.
+3.  **Model Building:** A Random Forest Classifier was chosen for the predictive task. A pipeline was created to handle preprocessing  and model training.
 4.  **Hyperparameter Tuning:** GridSearchCV was used to find the optimal hyperparameters for the Random Forest model to improve its performance.
 5.  **Model Evaluation:** The trained model was evaluated using standard classification metrics, including accuracy, precision, recall, and F1-score. A confusion matrix was also generated to visualize the model's performance.
 6.  **Feature Importance Analysis:** The feature importances from the trained Random Forest model were analyzed to identify the most influential factors in predicting mental health treatment-seeking behavior.
